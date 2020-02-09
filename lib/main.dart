@@ -5,6 +5,7 @@ import 'demo/bottom_navigation_bar_demo.dart';
 import 'demo/basic_demo.dart';
 import 'demo/view_demo.dart';
 import 'demo/gridView_demo.dart';
+import 'demo/sliver_demo.dart';
 
 void main() => runApp(App());
 
@@ -21,6 +22,7 @@ class App extends StatelessWidget {
             splashColor: Colors.white70));
   }
 }
+
 
 class Home extends StatelessWidget {
 
@@ -57,9 +59,9 @@ class Home extends StatelessWidget {
           body: TabBarView(
             children: <Widget>[
               ListViewDemo(),
-              BasicDemo(),
               GridViewDemo(),
               ViewDemo(),
+              SliverDemo(),
             ],
           ),
           drawer: DrawDemo(),
